@@ -10,6 +10,7 @@ const navItems = [
   { name: "Use Effect", path: "/useEffect" },
   { name: "Props", path: "/props" },
   { name: "Axios vs Fetch", path: "/axiosvsfetch" },
+  
 ];
 
 const Layout2 = () => {
@@ -18,9 +19,9 @@ const Layout2 = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center flex-wrap">
           <h1 className="text-xl font-bold text-slate-700">React Forms App</h1>
-          <nav className="flex gap-6">
+          <nav className="flex gap-6 flex-wrap">
             {navItems.map((item) => (
               <Link
                 key={item.name}
